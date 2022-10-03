@@ -8,7 +8,7 @@ public class TesteUnicodeEEncoding {
 	
 	public static void main(String[] args) throws UnsupportedEncodingException{
 		
-		String s = "CCCC";
+		String s = "C";
 		System.out.println(s.codePointAt(0));
 		
 		Charset charset = Charset.defaultCharset();
@@ -16,6 +16,8 @@ public class TesteUnicodeEEncoding {
 		
 		byte[] bytes = s.getBytes("UTF-8");
 		System.out.println(bytes.length + ", UTF-8 " );
+		String sNovo = new String(bytes);
+		System.out.println(sNovo);
 		
 		bytes = s.getBytes("UTF-16");
 		System.out.println(bytes.length + ", UTF-16 " );
