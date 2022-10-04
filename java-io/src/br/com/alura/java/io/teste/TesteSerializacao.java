@@ -16,9 +16,10 @@ public class TesteSerializacao {
 		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objeto.bin"));
 		String nome = (String) ois.readObject();
 		ois.close();
-		
+
 		System.out.println(nome);
 
+		// Teste
 	}
 
 }
