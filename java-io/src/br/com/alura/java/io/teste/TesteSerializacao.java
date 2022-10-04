@@ -19,7 +19,7 @@ public class TesteSerializacao {
 
 		System.out.println(nome);
 
-		// Teste
+
 	}
 
 }
