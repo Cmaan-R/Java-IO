@@ -21,7 +21,7 @@ public class TesteSerializacaoCliente {
 		Cliente cliente = (Cliente) ois.readObject();
 		ois.close();
 
-		System.out.println(cliente.getCpf());
+		System.out.println(cliente.getNomeCpfProfissao());
 
 	}
 

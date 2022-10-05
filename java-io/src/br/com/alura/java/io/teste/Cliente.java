@@ -18,6 +18,14 @@ public class Cliente implements Serializable {
 	private String nome;
 	private String cpf;
 	private String profissao;
+	
+	public String getNomeCpf() {
+		return nome + ", " + cpf;
+	}
+	
+	public String getNomeCpfProfissao() {
+		return nome + ", " + cpf + ", " + profissao;
+	}
 
 	public String getNome() {
 		return nome;
